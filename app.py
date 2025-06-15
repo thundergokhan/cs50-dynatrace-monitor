@@ -10,8 +10,7 @@ def index():
         ip = request.form.get("ip")
         try:
             # For Windows, use: ["ping", "-n", "1", ip]
-            # For Linux/Mac, use: ["ping", "-c", "1", ip]
-            output = subprocess.check_output(["ping", "-c", "1", ip], stderr=subprocess.STDOUT, universal_newlines=True)
+            output = subprocess.check_output(["ping", "-n", "1", ip], stderr=subprocess.STDOUT, universal_newlines=True)
             status = f"🟢 Server {ip} is up and reachable."
         except subprocess.CalledProcessError:
             status = f"🔴 Server {ip} is unreachable."
