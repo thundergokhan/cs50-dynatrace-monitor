@@ -1,4 +1,4 @@
-# Linux Server Monitoring Panel
+# Windows & Linux Server Monitoring Panel
 
 #### Youtube: [def]
 
