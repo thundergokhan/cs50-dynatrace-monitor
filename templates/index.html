@@ -1,15 +1,16 @@
 <!DOCTYPE html>
-<html lang="tr">
+<html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <title>Sunucu Durumu Kontrolü</title>
+    <title>Server Status Check</title>
   </head>
   <body>
-    <h1>Dynatrace Sunucu Kontrol</h1>
+    <h1>Dynatrace Server Monitor</h1>
+    <h2>Gökhan Yıldırım - Participating from Istanbul</h2>
     <form method="POST">
-      <label>Sunucu IP:</label>
+      <label>Server IP:</label>
       <input type="text" name="ip" required />
-      <button type="submit">Kontrol Et</button>
+      <button type="submit">Check Status</button>
     </form>
     <p>{{ status }}</p>
   </body>

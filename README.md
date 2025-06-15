@@ -1,25 +1,26 @@
-# Linux Sunucu İzleme Paneli
+# Linux Server Monitoring Panel
 
-#### Video Demo: <BURAYA YouTube LINKİNİ EKLE>
+#### Video Demo: [def]
 
-#### Açıklama:
+#### Description:
 
-Bu proje Python ve Flask kullanılarak geliştirilmiş basit bir sistem izleme panelidir. `psutil` kütüphanesi aracılığıyla CPU, RAM ve Disk kullanım bilgilerini alır ve web arayüzünde gösterir.
+This is a simple system monitoring panel developed with Python and Flask. It checks if a server is reachable by pinging the provided IP address and displays the status on a web interface.
 
-## Dosyalar
+## Files
 
-- `app.py`: Flask uygulamasını başlatır ve sistem verilerini toplar.
-- `templates/index.html`: HTML şablon dosyası, gelen verileri ekranda gösterir.
+- `app.py`: Starts the Flask app and handles ping requests.
+- `templates/index.html`: HTML template displaying the input form and status.
 
-## Kullanılan Teknolojiler
+## Technologies Used
 
 - Python 3
 - Flask
-- psutil
 
-## Nasıl çalıştırılır?
+## How to Run?
 
 ```bash
-pip install flask psutil
+pip install flask
 python app.py
 ```
+
+[def]: https://www.youtube.com/@G0khanyldrmm
