@@ -1,6 +1,6 @@
 # Windows & Linux Server Monitoring Panel
 
-#### Youtube: [def]
+#### Youtube: [[def]](https://youtu.be/wuG7PbHKmJs)
 
 #### Description:
 
@@ -23,4 +23,4 @@ pip install flask
 python app.py
 ```
 
-[def]: [https://www.youtube.com/@G0khanyldrmm](https://youtu.be/wuG7PbHKmJs)
+
