@@ -2,16 +2,86 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <title>Server Status Check</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Dynatrace Server Monitor</title>
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+        background-color: #f0f4f8;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        min-height: 100vh;
+        margin: 0;
+      }
+
+      h1 {
+        color: #2c3e50;
+        margin-bottom: 20px;
+      }
+
+      form {
+        background-color: #ffffff;
+        padding: 20px 30px;
+        border-radius: 12px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+      }
+
+      label {
+        margin-bottom: 10px;
+        font-weight: bold;
+      }
+
+      input[type="text"] {
+        padding: 10px;
+        width: 250px;
+        border-radius: 6px;
+        border: 1px solid #ccc;
+        margin-bottom: 20px;
+        font-size: 16px;
+      }
+
+      button {
+        padding: 10px 20px;
+        background-color: #3498db;
+        color: white;
+        border: none;
+        border-radius: 6px;
+        cursor: pointer;
+        font-size: 16px;
+      }
+
+      button:hover {
+        background-color: #2980b9;
+      }
+
+      p {
+        margin-top: 20px;
+        font-size: 18px;
+        color: #2c3e50;
+        font-weight: bold;
+      }
+
+      .footer {
+        margin-top: 40px;
+        font-size: 14px;
+        color: #888;
+      }
+    </style>
   </head>
   <body>
     <h1>Dynatrace Server Monitor</h1>
-    <h2>Gökhan Yıldırım - Participating from Istanbul</h2>
     <form method="POST">
-      <label>Server IP:</label>
+      <label for="ip">Server IP:</label>
       <input type="text" name="ip" required />
       <button type="submit">Check Status</button>
     </form>
     <p>{{ status }}</p>
+
+    <div class="footer">Developed by Gökhan Yıldırım - CS50x Final Project</div>
   </body>
 </html>
