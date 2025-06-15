@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html lang="tr">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Sunucu Durumu Kontrolü</title>
+  </head>
+  <body>
+    <h1>Dynatrace Sunucu Kontrol</h1>
+    <form method="POST">
+      <label>Sunucu IP:</label>
+      <input type="text" name="ip" required />
+      <button type="submit">Kontrol Et</button>
+    </form>
+    <p>{{ status }}</p>
+  </body>
+</html>
